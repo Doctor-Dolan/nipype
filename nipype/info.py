@@ -147,7 +147,7 @@ REQUIRES = [
     "simplejson>=%s" % SIMPLEJSON_MIN_VERSION,
     "traits>=%s,!=5.0" % TRAITS_MIN_VERSION,
     "filelock>=3.0.0",
-    "etelemetry",
+    "etelemetry>=0.2.0",
 ]
 
 # neurdflib has to come after prov
@@ -157,7 +157,6 @@ REQUIRES += ["neurdflib"]
 TESTS_REQUIRES = [
     "codecov",
     "coverage<5",
-    "mock",
     "pytest",
     "pytest-cov",
     "pytest-env",
